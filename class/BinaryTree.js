@@ -90,7 +90,14 @@ class BinaryTree {
    * @returns an array of leaves that the tree contains
    */
   leaves() {
+    const result = [];
+    BinaryTree.preorder(this.root, (current) => {
+      if (!current.left && !current.right) {
+        result.push(current);
+      }
+    })
 
+    return result;
   }
 }
 

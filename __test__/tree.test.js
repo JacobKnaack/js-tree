@@ -20,9 +20,9 @@ describe('Testing binary tree classes', () => {
       expect(tree.append(30)).toMatchObject({value: 30, right: null, left: null});
       expect(tree.root.left).toMatchObject({value: 30, right: null, left: null});
     });
-    // it('should be able to return all the leaves', () => {
-    //   expect(tree.leaves()).toMatchObject([new Node(20)]);
-    // });
+    it('should be able to return all the leaves', () => {
+      expect(tree.leaves()).toMatchObject([new Node(30)]);
+    });
     it('Can traverse the tree', () => {
       expect(tree.traverse({order: 'preorder', callback: (current) => current.value += 1}).value).toBe(21);
     });
