@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose --coverage"
+    "test": "jest --verbose --coverage && jest-coverage-badges"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json-summary",
+      "text",
+      "lcov"
+    ]
   },
   "keywords": [],
-  "author": "",
+  "author": "Jacob Knaack @jacobknaack",
   "license": "ISC",
   "dependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "jest-coverage-badges": "^1.1.2"
   }
 }

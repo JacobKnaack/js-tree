@@ -1,6 +1,8 @@
 # Created by https://www.gitignore.io/api/osx,node,webstorm
 # Edit at https://www.gitignore.io/?templates=osx,node,webstorm
 
+### Code Coverage files ##
+
 ### Node ###
 # Logs
 logs
@@ -23,8 +25,9 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
-*.lcov
+coverage/coverage*
+coverage/clover.xml
+*lcov*
 
 # nyc test coverage
 .nyc_output
